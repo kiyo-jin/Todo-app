@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Todo-app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+このアプリケーションはToDoタスクを作成し、チームタスクを効率的に管理するものです。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## アプリケーションのイメージ
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![ToDoアプリ操作デモ](images/todo.gif)
+## 機能一覧
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### トップ画面
 
-## Learn More
+![ToDoアプリ - アプリ起動画面](images/todo-app-top.png)
+アプリ起動時のメイン画面です。新規TODOを作成ボタンをクリックすることでToDoタスクを作成することができます。
 
-To learn more about Next.js, take a look at the following resources:
+### タスク追加
+![ToDoアプリ - タスク追加フォーム](images/todo-app-add-form.png)
+それぞれのテキストボックスに入力したあと、作成ボタンをクリックすることでTodoタスクが追加されます。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### タスク一覧
+![ToDoアプリ - アプリ起動画面](images/todo-app-list.png)
+現在のタスク一覧が表示され、未着手、進行中、完了を瞬時に把握でき、進捗具合の変更、タスクの削除を行えます。また、期限が切れているタスクは赤く表示されます。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 使用技術
+-   **Next.js**
+-   **React**
+-   **TypeScript**
+-   **Tailwind CSS**
+-   **zod**
+-   **React Hook Form**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
